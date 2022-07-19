@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import {Home} from './components/Home/home';
+import {Filters} from './components/Filtros/filtros';
+import {Carrinho} from './components/Carrinho/carrinho'
+
+//variável de estado que vai guardar o termo de busca
+const [query, setQuery] = useState("")
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+        <Filters
+          query={query}
+          setQuery={setQuery}
+        />
+        <Home/>
+        <Carrinho/>
+
     </div>
   );
 }
