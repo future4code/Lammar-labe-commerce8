@@ -1,10 +1,9 @@
-import React from "react"
-import {FiltersContainer} from "./Style"
+ import React from "react"
+import {CarrinhoContainer} from "./Style"
 
-//Componente que armazena meus inputs controlados
-export function Filters(props){
-      return <FiltersContainer>
-        
-      </FiltersContainer>
+
+
+export function Carrinho(){
+    return <CarrinhoContainer></CarrinhoContainer>
+    
 }
-
