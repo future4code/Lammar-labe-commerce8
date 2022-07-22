@@ -1,17 +1,16 @@
-import React from "react"
-import {CarrinhoContainer} from "./style"
+ import React from "react"
+import {CarrinhoContainer} from "./Style"
 
-/*export function Carrinho(){
+export function Carrinho(){
+    return <CarrinhoContainer></CarrinhoContainer>
+    
+}
+
+export function Carrinho(){
       return <CarrinhoContainer>
            <></>
 
-
-
-      </CarrinhoContainer>
-
-
-
-}*/
+}
 
 const [produtosCarrinho, setProdutosCarrinho] = useState([]);
 

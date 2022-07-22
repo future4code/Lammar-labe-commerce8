@@ -1,34 +1,22 @@
-import React, {useState} from 'react';
-import {Home} from './components/Home/home';
-import {Filters} from './components/Filtros/filtros';
-import {Carrinho} from './components/Carrinho/carrinho';
+import React from 'react';
+import {Home} from './components/Home/Home';
+/* import {Filters} from './components/Filtros/Filtros';
+import {Carrinho} from './components/Carrinho/Carrinho';
+ */
+import {listaDeDados} from './mockDeDados'
 
-
-
-//variável de estado que vai guardar o termo de busca
-   const [query, setQuery] = useState("")
-   const [minPrice, setMinPrice] = useState(-Infinity) 
-   const [maxPrice, setMaxPrice] = useState(Infinity)
 
 function App() {
+ 
   return (
     <div>
-
-        <Filters
-            query={query}
-            minPrice={minPrice}
-            maxPrice={maxPrice}
-
-            setQuery={setQuery} 
-            setMinPrice={setMinPrice}
-            setMaxPrice={setMaxPrice}
-        />
-        <Home/>
-       
-        <Carrinho/>
+     
+      <Home meusCards={listaDeDados}/>
+        
 
     </div>
   );
 }
 
 export default App;
+
