@@ -8,6 +8,7 @@ export const Card = Styled.div `
     will-change: transform;
     transition: transform 450ms;
     background-color: white;
+
     > img {
         width: 100%;
     }
@@ -22,3 +23,12 @@ export const Card = Styled.div `
         transform: translateY(-10px);
     }
 `
+
+
+
+
+
+
+
+
+

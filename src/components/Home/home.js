@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react"
 import {Card} from "./Style"
 
 export const Home = (props) => {
@@ -13,6 +13,9 @@ export const Home = (props) => {
       return(
             <div>
                   {componentsDados}
-                  </div>
+
+            </div>
       )
 }
+  
+export default Home; 

@@ -7,15 +7,17 @@ import {listaDeDados} from './mockDeDados'
 
 
 function App() {
+ 
   return (
     <div>
 
-      
-        <Home meusCards={listaDeDados}/>
-       
-       
+     
+      <Home meusCards={listaDeDados}/>
+        
+
     </div>
   );
 }
 
 export default App;
+
