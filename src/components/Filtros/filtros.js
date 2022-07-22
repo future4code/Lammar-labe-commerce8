@@ -1,5 +1,6 @@
- import React from "react"
-import {CarrinhoContainer} from "./Style"
+
+import React from "react"
+import {FiltersContainer} from "./Style"
 
 
 

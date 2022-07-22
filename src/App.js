@@ -10,6 +10,7 @@ function App() {
  
   return (
     <div>
+
      
       <Home meusCards={listaDeDados}/>
         
