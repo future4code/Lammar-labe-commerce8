@@ -1,10 +1,10 @@
 
 import React from "react"
-import {FiltersContainer} from "./Style"
+import {FiltrosContainer} from "./Style"
 
 
 
-export function Carrinho(){
-    return <CarrinhoContainer></CarrinhoContainer>
+export function Filtros(){
+    return <FiltrosContainer></FiltrosContainer>
     
 }
