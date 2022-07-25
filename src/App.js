@@ -1,7 +1,7 @@
 import React, {useState}  from 'react';
-import {Home} from './components/Home/Home';
-import {Filtros} from './components/Filtros/Filtros';
-import {Carrinho} from './components/Carrinho/Carrinho';
+import {Home} from './components/Home/home';
+import {Filtros} from './components/Filtros/filtros';
+import {Comprar} from './components/Carrinho/carrinho';
 import {ContainerPrincipal} from "./components/Home/style";
 import {listaDeDados} from './mockDeDados';
 
@@ -24,7 +24,7 @@ function App() {
        />
         
        <Home meusCards={listaDeDados}/>
-       <Carrinho></Carrinho>
+       <Comprar minhaCompra={listaDeDados}/>
     </ContainerPrincipal>
   );
 }

@@ -26,7 +26,8 @@ export function Filtros(props){
                 type="number"
                 value={props.maxPrice}
                 onChange={(ev) =>{props.setMaxPrice(ev.target.value)}} 
-            />
+                />
+                <button>Buscar</button>
     </FiltrosContainer>
     </DigitaFiltro>
     
