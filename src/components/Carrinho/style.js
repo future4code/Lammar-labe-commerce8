@@ -1,6 +1,6 @@
-import Styled from "styled-components";
+import styled from "styled-components";
 
-export const CarrinhoContainer = Styled.div `
+export const CarrinhoContainer = styled.div `
       display: flex;
       justify-content:space-around;
 

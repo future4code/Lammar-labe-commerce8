@@ -1,6 +1,17 @@
-import Styled from "styled-components";
+import styled from "styled-components";
 
-export const Card = Styled.div `
+export const ContainerPrincipal = styled.div`
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+`
+
+export const CardContainer = styled.div`
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+`
+
+export const Card = styled.div `
     height: 350px;
     width: 200px;
     box-shadow: 2px 2px 5px 2px LightSteelBlue;
