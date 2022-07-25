@@ -1,29 +1,31 @@
-import React  from 'react';
+import React, {useState}  from 'react';
 import {Home} from './components/Home/Home';
 import {Filtros} from './components/Filtros/Filtros';
-/* import {Carrinho} from './components/Carrinho/Carrinho'; */
- import {listaDeDados} from './mockDeDados'
-
+import {Carrinho} from './components/Carrinho/Carrinho';
+import {ContainerPrincipal} from "./components/Home/style";
+import {listaDeDados} from './mockDeDados';
 
 function App() {
-
-
-  /* const [query, setQuery] = useState("")
+  
+  const [query, setQuery] = useState("")
   const [minPrice, setMinPrice] = useState(-Infinity) 
-  const [maxPrice, setMaxPrice] = useState(Infinity) */
+  const [maxPrice, setMaxPrice] = useState(Infinity) 
  
   return (
-    <div>
+    <ContainerPrincipal>
        <Filtros
-           
-            
-        />
+          query={query}
+          minPrice={minPrice}
+          maxPrice={maxPrice}
 
-     
-    <Home meusCards={listaDeDados}/>
+          setQuery={setQuery} 
+          setMinPrice={setMinPrice}
+          setMaxPrice={setMaxPrice}
+       />
         
-
-    </div>
+       <Home meusCards={listaDeDados}/>
+       <Carrinho></Carrinho>
+    </ContainerPrincipal>
   );
 }
 
