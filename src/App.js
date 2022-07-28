@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState}  from 'react';
+import {Home} from './components/Home/home';
+import {Filtros} from './components/Filtros/filtros';
+import {Comprar} from './components/Carrinho/carrinho';
+import {ContainerPrincipal} from "./components/Home/style";
+import {listaDeDados} from './mockDeDados';
 
 function App() {
+  
+  const [query, setQuery] = useState("")
+  const [minPrice, setMinPrice] = useState(-Infinity) 
+  const [maxPrice, setMaxPrice] = useState(Infinity) 
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ContainerPrincipal>
+       <Filtros
+          query={query}
+          minPrice={minPrice}
+          maxPrice={maxPrice}
+
+          setQuery={setQuery} 
+          setMinPrice={setMinPrice}
+          setMaxPrice={setMaxPrice}
+       />
+        
+       <Home meusCards={listaDeDados}/>
+       <Comprar minhaCompra={listaDeDados}/>
+    </ContainerPrincipal>
   );
 }
 
 export default App;
+
